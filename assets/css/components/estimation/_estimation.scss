@@ -1,0 +1,131 @@
+.c-estimation{
+    &__block{
+        margin-bottom: 100px;
+        &--mb{
+            margin-bottom:32px;
+        }
+    }
+    &__sidebar{
+        border-left: 2px solid #C4C4C4;
+        background-color: #F7F8F9;
+        border-radius: 2px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__sidebarBlock{
+        margin-bottom: 30px;
+    }
+    &__sidebarHeading{
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.2);
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    &__sidebarLink{
+        font-weight: normal;
+        font-size: 18px;
+        color: $mainColor;
+        margin: 0;
+    }
+    &__sidebarContent{
+        font-weight: normal;
+        font-size: 18px;
+        color: #000000;
+        margin: 0;        
+        span{
+            color: $mainColor;
+            display: block;
+        }
+        a{
+            display: block;
+            width:100%;
+            color: #2D65BA;
+        }      
+        
+    }
+    &__leftPadding {
+        padding-right: 40px;
+        @media (max-width:767px){
+            padding-right: 0px;
+        }
+    }
+    &__sidebarMainHeading {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 400;
+    }    
+    &__contact{
+        margin-top: 15px;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: underline;  
+        }
+    }        
+}
+.c-estimation__wrapper textarea.c-contact__formField{
+    height: 192px;
+    padding-top: 35px;
+}
+.c-estimation__wrapper textarea.c-contact__formField + span{
+    bottom: auto;
+    top: 10px;
+}
+.c-estimation__sidebarContent .c-estimation__mail{
+    color:#000000 ;
+    margin-top:8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.to_value, .from_value{
+    font-size: 12px;
+    color: #8A8A8A; 
+}
+.range_slider{
+    padding: 0px 10px;
+}
+.ui-slider .ui-slider-handle{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $mainColor;
+    border-color: $mainColor;
+    outline: none;top: 50%;
+    transform: translateY(-50%);
+}
+.ui-slider-horizontal, .ui-widget.ui-widget-content{
+    height: 2px;
+    border: none;
+    background-color: #ccc;
+}
+.ui-slider-horizontal .ui-slider-range{
+    background-color: $mainColor;
+    border-color: $mainColor;
+}
+.ui.checkbox input:checked~label:after, .ui.checkbox input:checked:focus~label:after {
+    opacity: 1;
+    color: #ffffff;
+}
+.ui.checkbox input:checked~label:before, .ui.checkbox input:checked:focus~label:before {
+    background: $mainColor;
+    border-color: $mainColor;
+}
+.ui.checkbox .box:before, .ui.checkbox label:before{
+    width: 20px;
+    height: 20px;
+}
+.ui.checkbox .box:after, .ui.checkbox label:after{
+    top: 2px;
+    left: 2px;
+}
+.c-contact__formBlock .checkbox{
+    margin-bottom: 20px;
+}
+.c-contact__formBlock .c-attached {
+    position: static;
+    padding-right: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,48 @@
+/*******************************
+            Container
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Minimum Gutter is used to determine the maximum container width for a given device */
+
+$max-width: 100% !default;
+
+/* Devices */
+$mobile-minimum-gutter: 0em !default;
+$mobile-width: auto !default;
+$mobile-gutter: 1em !default;
+
+$tablet-minimum-gutter: ($em-size  * 1) !default;
+$tablet-width: $tablet-breakpoint - ($tablet-minimum-gutter * 2) - $scrollbar-width !default;
+$tablet-gutter: auto !default;
+
+$computer-minimum-gutter: ($em-size  * 1.5) !default;
+$computer-width: $computer-breakpoint - ($computer-minimum-gutter * 2) - $scrollbar-width !default;
+$computer-gutter: auto !default;
+
+$large-monitor-minimum-gutter: ($em-size  * 2) !default;
+$large-monitor-width: $large-monitor-breakpoint - ($large-monitor-minimum-gutter * 2) - $scrollbar-width !default;
+$large-monitor-gutter: auto !default;
+
+/* Coupling (Add Negative Margin to container size) */
+$grid-gutter-width: 2rem !default;
+$relaxed-grid-gutter-width: 3rem !default;
+$very-relaxed-grid-gutter-width: 5rem !default;
+
+$mobile-grid-width: $mobile-width !default;
+$tablet-grid-width: calc($tablet-width + $grid-gutter-width) !default;
+$computer-grid-width: calc($computer-width + $grid-gutter-width) !default;
+$large-monitor-grid-width: calc($large-monitor-width + $grid-gutter-width) !default;
+
+$mobile-relaxed-grid-width: $mobile-width !default;
+$tablet-relaxed-grid-width: calc($tablet-width + $relaxed-grid-gutter-width) !default;
+$computer-relaxed-grid-width: calc($computer-width + $relaxed-grid-gutter-width) !default;
+$large-monitor-relaxed-grid-width: calc($large-monitor-width + $relaxed-grid-gutter-width) !default;
+
+$mobile-very-relaxed-grid-width: $mobile-width !default;
+$tablet-very-relaxed-grid-width: calc($tablet-width + $very-relaxed-grid-gutter-width) !default;
+$computer-very-relaxed-grid-width: calc($computer-width + $very-relaxed-grid-gutter-width) !default;
+$large-monitor-very-relaxed-grid-width: calc($large-monitor-width + $very-relaxed-grid-gutter-width) !default;

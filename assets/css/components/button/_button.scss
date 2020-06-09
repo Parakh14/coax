@@ -1,0 +1,129 @@
+.c-btn{
+    display: inline-block;
+    min-width: 250px;
+    height: 64px;
+    line-height: unset;
+    font-weight: normal;
+    background: #FFFFFF;
+    padding: 0px 20px;
+    padding-top: 30px;
+    padding-left: 8px;
+    text-align: left;
+    padding-right: 50px;
+    position: relative;
+    color: $mainColor;
+    border: 1px solid transparent;
+    border-radius: 2px;
+     // text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    @media (max-width: 768px){
+        min-width: 200px;
+    }
+    span{
+        margin-left: 15px;
+        vertical-align: middle;
+        width: 16px;
+        svg path{
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &:hover{
+        background-color: transparent;
+        // color: #FFFFFF;
+        border-color: $mainColor;
+        span svg path{
+            stroke: $mainColor;
+        }
+    }
+    &__default{
+        border-color: #DADADA;
+        background-color: transparent;
+        
+    }
+    &__noBorder{
+        border-color: transparent;
+        color: $mainColor;
+        padding: 0px 20px;
+        padding-left: 0;
+        height: 48px;
+        line-height: 45px;
+        min-width: 156px;
+        display:flex;
+        align-items: center;
+        font-size: 18px;
+        &:hover{
+            background-color: transparent;
+            color: #204294;
+            border-color: transparent;            
+            display:flex;
+            align-items: center;
+            span svg path{
+                stroke: #204294;
+            }
+        }
+    }
+    &__showcase{
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    &__primary{
+        border-color: $mainColor;
+        background-color: $mainColor;
+        color: #FFFFFF;
+        span{
+            svg path{
+                stroke: #FFFFFF;
+            }
+        }
+        &:hover{
+            background-color: #204294;
+            color: #ffffff;
+            border-color: #204294;
+            span svg path{
+                stroke: #fff;
+            }
+        }
+    }
+    &__black{
+        border-color: #000000;
+        background-color: #000000;
+        color: #FFFFFF;
+        &:hover{
+            background-color: #404040;
+            color: #fff;
+            border-color:  #404040;
+            span svg path{
+                stroke: #fff;
+            }
+        }
+    }
+    &__up{
+        span{
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            transform: rotate( -45deg);
+            font-size: 0;
+            display: inline-block;
+            width: 17px;
+        }
+    }
+    &__down{
+        span{
+            position: unset;
+            transform: rotate(45deg);
+            font-size: 0;
+            display: inline-block;
+            vertical-align: baseline;
+            margin-left:15px;
+            width: 16px;
+            margin-top: 10px;
+        }
+    }
+    &__block{
+        display: block;
+        &:hover{
+            display: block;
+        }
+    }
+}

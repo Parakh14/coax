@@ -1,0 +1,36 @@
+.c-promise{
+    &__contentWrapper{
+        padding-top: 50px;
+        padding-right: 60px;
+        @media (max-width: 768px){
+            padding-top: 0;
+            padding-right: 0px;
+        }
+    }
+    &__subHeading{
+        font-size: 24px;
+        font-weight: normal;
+        color: $mainColor;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__heading{
+        color: #000000;
+        font-weight: 500;
+        font-size: 32px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &__image {
+        margin-left: -60px;
+        @media (max-width:767px){
+            margin-left: 0px;
+        }
+    }
+
+}
+@media (max-width: 450px){
+    .c-promise__contentWrapper .c-btn{
+        display: block;
+    }
+}

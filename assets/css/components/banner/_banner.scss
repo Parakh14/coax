@@ -1,0 +1,104 @@
+.c-banner{
+    &__wrapper{
+        padding: 50px 0px;
+        padding-top: 66px;
+        @media (max-width:767px){
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    &__heading{
+        font-size: 64px;
+        line-height: 1.23;
+        color: #000000;
+        font-weight: normal;
+        // text-transform: capitalize;
+        margin-bottom: 30px;
+        font-family: $font-family;
+        letter-spacing: 0.7px;
+        @media (max-width: 768px){
+            font-size: 40px;
+            line-height: 1.5;
+            margin-bottom: 22px;
+        }
+        &--font-50{
+            font-size: 50px;
+            @media (max-width:767px) {
+                font-size: 40px;
+            }
+        }
+    }
+    &__content{
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 60px;
+        @media (max-width: 768px){
+            margin-bottom: 24px;
+        }
+    }
+    &__contentWrapper-outer {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__image{
+        margin-left: -1rem;
+        margin-right: -1rem;
+        @media (min-width: 1400px){
+            width:630px;
+        }
+    }
+    &__contentWrapper{
+        padding-top: 0px;
+        @media (max-width: 768px){
+            padding-top: 0;
+        }
+    }
+    &__btnWrapper{
+        .c-btn{
+            margin-bottom:30px;
+            @media (max-width: 767px){
+                margin-bottom: 24px ;
+            }
+        } 
+        @media (max-width: 768px){
+            margin-bottom: 28px ;
+        }
+        @media (max-width: 768px) and (min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media (max-width: 1366px) and (min-width: 1366px){
+            display: flex;
+            align-items: center;
+        }
+        a{
+            margin-right: 10px;
+            @media (max-width: 768px) and (min-width: 768px){
+                font-size: 12px;
+                min-width: 160px;
+                padding-right: 10px;
+            }
+            @media (max-width: 1366px) and (min-width: 1366px){
+                font-size: 14px;
+                min-width: 220px;
+                padding-right: 20px;
+                margin-right: 20px;
+            }            
+            @media (max-width: 450px){
+                margin: 0;
+                font-size: 14px;
+                margin-bottom: 5px;
+                display: block;
+            }
+        }
+    }   
+
+}
+.c-banner__btnWrapper a.set-width{
+    min-width: 188px;
+    display: inline-block;
+}

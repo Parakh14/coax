@@ -1,0 +1,39 @@
+.c-nav__list {
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+
+}
+
+
+
+.c-nav__item {
+// text-transform: capitalize;
+  display: inline-block;
+
+  margin: 0px 6px;
+
+}
+
+
+
+.c-nav__link {
+
+  display: inline-block;
+
+  text-transform: capitalize;
+
+  color: #000000;
+
+  font-weight: 500;
+
+  -webkit-transition: all 0.3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+/*# sourceMappingURL=nav.css.map */

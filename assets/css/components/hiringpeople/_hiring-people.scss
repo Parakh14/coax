@@ -1,0 +1,126 @@
+.c-hiringPeople{
+    &__heading {
+        font-size: 25px;
+        margin-bottom: 65px;
+    }
+    &__bold-content {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 1.4;
+        padding-left: 25px;
+        @media (max-width:767px) {
+            font-size: 34px;
+        }
+        &--pd-0{
+            padding-left:0;
+        }
+    }
+    &__small-bold {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    &__about-people {
+        margin-top: 64px;
+        &--pl-20 {
+            padding-left: 25px;
+        }
+        &--mt-0{
+            margin-top:0;
+        }
+    }
+    &__small-text {
+        font-weight: 300;
+    }
+    &__text-right {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__bold-contentWrapper {
+        position: relative;
+    }
+    &__text-wrap{
+        margin-top: 10px !important;
+    }
+    &__bold-contentWrapper:before{
+        content: "";
+        background: url(../../assets/images/svg/hiring-v2/“.svg);
+        position: absolute;
+        top: -35px;
+        width: 60px;
+        z-index: 99;
+        left: 0px;
+        height: 40px;
+        background-repeat: no-repeat;
+    } 
+    &__logo-wrap {
+        width: 115px;
+    }
+}
+.c-hiringv2{
+    &__banner{
+        z-index: 1;
+        position: relative;
+    }
+    &__banner-img {
+        width: 100%;
+        @media (min-width:768px) {
+            width: 100vw;
+            margin-left: calc(-1px - 50vw);
+            position: relative;
+            left: 50%;
+        }
+        
+        svg{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__img-bg{
+        background: #f4f7fc;
+    }
+    &__banner-bg{
+        background-image: url(../../assets/images/svg/showcase/Background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__slider-pt-30{
+        padding-top: 30px;
+    }
+    &__slider-pt-50{
+        padding-top: 50px;
+    }
+}
+
+    .c-hiringv2__bg{
+        position: relative;
+    }    
+    .c-hiringv2__bg:after {
+        content: "";
+        background: url(../../assets/images/res-bg.png) no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 147px;
+        background-position: bottom;
+        @media (max-width:767px){  
+            bottom: 80px;
+        }
+    }
+    .c-hiringv2__bg-bt0:after {
+        bottom: 25px;
+    }
+    
+
+
+
+
+
+
+
+
+

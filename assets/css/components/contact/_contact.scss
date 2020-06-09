@@ -1,0 +1,184 @@
+.c-contact{
+    &__wrapper{
+        @media (max-width:767px){
+            margin-bottom: 70px;
+        }
+        &--mt-50{
+            @media (min-width:768px){
+                margin-top:50px;
+            }            
+        }
+    }
+    &__headingBlock {
+        margin-top: -0.7em;
+    }
+    &__heading{
+        // text-transform: capitalize;
+        color: #000000;
+        font-size: 32px;
+        margin: 0;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-weight: 500;
+        @media (max-width: 450px){
+            font-size: 20px;
+        }
+    }
+    &__radioGroup{
+        margin-bottom: 30px;
+        label{
+            position: relative;
+            margin: 0;
+            margin-right: 50px;
+            padding-left: 40px;
+            cursor: pointer;
+            // text-transform: capitalize;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            @media (max-width: 450px){
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            input{
+                position: absolute;
+                left: -9999px;
+            }
+            span{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #cccccc;
+                transition: all 0.3s ease-in-out;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            input:checked + span{
+                border-color: $mainColor;
+            }
+            input:checked + span:after{
+                background-color: $mainColor;
+            }
+        }
+    }
+    &__formBlock{
+        position: relative;
+        width: 100%;
+        background: #f7f8f9;
+        padding-top: 20px;
+        span{
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            font-weight: 300;
+            font-size: 18px;
+            // text-transform: capitalize;
+            color: #8a8a8a;
+            pointer-events:none;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &__formBlock-text{
+        font-size: 12px;
+    }
+    &__formField{
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        padding: 0px 10px;
+        padding-top: 0;
+        resize: none;
+        background-color: #F7F8F9;
+        height: 42px;
+        border-bottom: 2px solid #C4C4C4;
+        transition: border 0.3s ease-in-out;
+        display: block;
+        &:focus{
+            border-color: $mainColor;
+        }
+        &:focus,&:valid{
+            + span{
+                bottom: calc(100% - 10px);
+                top: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+    &__formhead {
+        font-weight: 400;
+        font-size: 24px;
+    }
+    &__number{
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 20px;
+        color: #000000;
+    }
+    &__email{
+        color: $mainColor;
+        font-size: 20px;
+    }
+    &__formWrapper--mb80{
+        margin-bottom:80px;
+    }
+    &__formSection{
+        &--field{
+            margin-top:-2rem;
+        }
+    }
+}
+textarea.c-contact__formField + span {
+    bottom: 10px;
+}
+.c-contact__formField.min_height{
+    height: 192px;
+    span{
+        bottom: auto;
+        top: 10px;
+    }
+}
+.c-contact__formField.min_height + span{
+    bottom: auto;
+    top: 10px;
+}
+@media (max-width: 450px){
+    .c-contact__formSection .c-btn{
+        display: block;
+    }
+}
+select {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
+      -o-appearance: none;
+         appearance: none;
+ 
+     background-image: url("../../assets/images/svg/cources/Vector 101.svg");
+     background-position:right 20px center;
+     background-size: 17px;
+     background-repeat: no-repeat;
+     @media (max-width:767px){
+        background-size: 15px;
+     }   
+ 
+ }
+ 
+ 

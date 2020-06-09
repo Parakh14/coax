@@ -1,0 +1,49 @@
+/*Body CSS Start*/
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: $font-family;
+    color: #000000;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+    // display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    padding: 60px 0px;
+    @media (min-width: 1200px){
+        padding: 100px 0px;
+    }
+    @media (max-width: 767px){
+        padding: 0px 0px;
+    }
+    
+}
+.ui.container{
+    @media (max-width: 1366px) and (min-width: 1366px){
+        // width: 980px;
+    }
+}
+.mb-4{
+    margin-bottom: 40px;
+}
+.flex_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.center{
+    text-align: center;
+}
+/*Body CSS End*/

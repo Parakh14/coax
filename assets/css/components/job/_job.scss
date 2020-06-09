@@ -1,0 +1,91 @@
+.c-job{
+    &__box {    
+        border: 1px solid #D2D2D2;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        min-height: 100%;
+        position:relative;
+        padding: 24px;
+        &:hover{
+            border: 1px solid #2255CE;
+        }
+        &--flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 0 25px;
+        }
+        &--link{
+            padding:0;
+            a{            
+                padding: 24px;
+            }
+        }    
+    }
+    &__heading {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        &--black{
+            color:#000000;
+        }
+        span{
+            margin-right:20px;
+            width: 24px;
+        }
+    } 
+    &__heading-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    &__heading-large{
+        font-size: 24px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;                
+    }      
+    &__content {
+        font-size: 18px;
+        color: rgba(0, 0, 0, .5);
+        font-weight: 400;
+        &--mb80{
+            margin-bottom:80px !important;
+        }
+    }
+    &__heading-integer {
+        width: 10%;
+        font-size: 50px;
+        margin-bottom:0;
+    }
+    &__content-text {
+        width: 90%;
+        @media (max-width:767px){
+            width:80%;
+        }
+    }
+    &__arrow  {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        padding-top: 10px;
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+        display: inline-block;
+        background: transparent;
+        min-width: 40px;
+        height: 40px;
+        &:hover{
+            display: inline-block;
+        }
+    }
+}

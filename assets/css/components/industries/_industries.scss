@@ -1,0 +1,204 @@
+@mixin indusBefore {
+  content: "";
+  @include fullAbs;
+  position: relative;
+  opacity: 1;
+  visibility: visible; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 91%;
+  width: 100%;
+  display: block;
+}
+@mixin indusAfter {
+  content: "";
+  @include fullAbs;  
+  opacity: 0;
+  visibility: hidden; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+.c-industries {
+  &__wrapper {
+    .row {
+      .column {
+        &:nth-last-child(1) .c-industries__block,
+        &:nth-last-child(2) .c-industries__block,
+        &:nth-last-child(3) .c-industries__block {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  &__block {
+    position: relative;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+  &__contentWrapper {
+    @include fullAbs;
+    z-index: 3;
+    padding: 20px 35px 0px 20px;
+    @media (max-width:992px) and (min-width:768px){
+      padding-right: 20px;
+    }
+  }
+  &__heading {
+    // text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: all 0s ease-in;
+    animation-timing-function: ease-in;
+    @media (max-width:992px) and (min-width:768px){
+      font-size: 25px;
+    }
+  }
+  &__content {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+    transition: all 0s ease-in;
+    animation-timing-function: ease-in;
+    z-index: 2;
+    line-height: 1.6;
+    @media (max-width:992px) and (min-width:768px){
+      font-size: 15px;
+      line-height: 1.3;
+    }
+  }
+  &__realestate {
+    overflow: hidden;
+    &::before {
+      background-image: url("../images/industry/real-state/Real Estate.png");
+      @include indusBefore;     
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../images/industry/real-state/Real Estate-dark.png");
+      @include indusAfter; 
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__travel {
+    overflow: hidden;
+    &::before {
+      background-image: url("../../assets/images/industry/travel/Travel.png");
+      @include indusBefore;
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../../assets/images/industry/travel/Travel-dark.png");
+      @include indusAfter;
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__finance {
+    &::before {
+      background-image: url("../../assets/images/industry/finance/Finance.png");
+      @include indusBefore;
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../../assets/images/industry/finance/Finance-dark.png");
+      @include indusAfter;
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__legal {
+    &::before {
+      background-image: url("../images/industry/legal/legal-grey.png");
+      @include indusBefore;
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../images/industry/legal/legal.png");
+      @include indusAfter;
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__healthcare {
+    &::before {
+      background-image: url("../images/industry/healthcare/Healthcare.png");
+      @include indusBefore;
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../images/industry/healthcare/Healthcare-dark.png");
+      @include indusAfter;
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__automotive {
+    &::before {
+      background-image: url("../images/industry/automative/Automotive.png");
+      @include indusBefore;
+    }
+    &:hover::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      background-image: url("../images/industry/automative/Automotive-dark.png");
+      @include indusAfter;
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.c-industries__block:hover .c-industries__heading {
+  color: #ffffff;
+}
+.c-industries__block:hover .c-industries__content {
+  color: #ffffff;
+}
+.c-industries__block:hover .c-industries__contentWrapper:before {
+  width: 100%;
+  height: 55px;
+  content: "";
+  background: rgba(35, 86, 168, 0.32);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,61 @@
+.c-mitca{
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__background {
+        background: #F7F8F9;
+        background-image: url(../../assets/images/svg/hiring-v2/pattern.svg);
+        padding: 84px 35px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    
+    &__content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    
+    &__heading {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+    &__img-wrapper {
+        width: 64px;
+        @media (max-width:767px){
+            width: 100%;
+        }
+    }    
+    &__content-wrapper {
+        width: 70%;
+        @media (max-width:767px){
+            width: 100%;
+        }
+    }
+    &__half {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__content-wrapper-down {
+        width: 50%;
+        margin: 37px 0;
+        @media (max-width:767px){
+            width: 100%;
+        }
+    }
+    &__half {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    &__link{
+        text-decoration: underline;
+    }
+}
+

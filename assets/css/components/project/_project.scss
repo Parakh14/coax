@@ -1,0 +1,41 @@
+.c-project{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__bg{
+        background: url(../../assets/images/bg.png);
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 40px;
+        margin: 0 18px;
+        @media (max-width:767px){
+            background-size: cover;
+            margin: 0;
+        }
+    }
+    &__form-head{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.6;
+    }
+    &__form-text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        color:rgba(0, 0, 0, .6);        
+    }
+    &__img,
+    &__form  {
+        width: 50%;
+        @media (max-width:767px){
+           width: 100%;
+        }        
+    }
+    &__btn-wrap {
+        margin-top: 16px;
+    }
+}

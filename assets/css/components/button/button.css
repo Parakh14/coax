@@ -1,0 +1,79 @@
+.c-btn {
+
+  display: inline-block;
+
+  min-width: 156px;
+
+  height: 48px;
+
+  line-height: 45px;
+  /* text-transform: capitalize; */
+  background: #FFFFFF;
+
+  color: #2255CE;
+
+  border: 1px solid transparent;
+
+  border-radius: 2px;
+
+  text-transform: capitalize;
+
+  text-align: center;
+
+  -webkit-transition: all 0.3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.c-btn span {
+
+  margin-left: 5px;
+
+  vertical-align: middle;
+
+}
+
+
+
+.c-btn span svg path {
+
+  -webkit-transition: all 0.3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.c-btn:hover {
+
+  background-color: #2255CE;
+
+  color: #FFFFFF;
+
+  border-color: #2255CE;
+
+}
+
+
+
+.c-btn:hover span svg path {
+
+  stroke: #FFFFFF;
+
+}
+
+
+
+.c-btn__default {
+
+  border-color: #DADADA;
+
+  background-color: transparent;
+
+}
+
+/*# sourceMappingURL=button.css.map */

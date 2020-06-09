@@ -1,0 +1,17 @@
+$import-google-fonts: false;
+$mainColor: #2255CE;
+$font-family: 'Formular',Arial,Helvetica,sans-serif;
+$large-monitor-width: 1110px;
+
+@mixin onAnimHover {
+    .c-animation-bg:hover &{
+        @content;
+    }
+}
+@mixin fullAbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }

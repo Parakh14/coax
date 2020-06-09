@@ -1,0 +1,15 @@
+.c-achievement{    
+    &__counting {
+        font-size: 50px;
+        line-height: 59px;
+    }
+    &__content {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 20px;
+        &--mt-10{
+            margin-top: 10px;
+        }
+    }
+
+}

@@ -1,0 +1,277 @@
+.c-team{
+    overflow: hidden;
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+    &__left-wrapper {
+        width: 33%;
+        padding-right: 16px;
+        z-index: 1;
+        @media (max-width:767px){
+            width:100%;
+        }
+    }
+    &__right-wrapper {
+        width: 65%;
+        padding-left: 109px;
+        @media (max-width: 992px) and (min-width: 768px){
+            padding-left: 30px;
+        }        
+        @media (max-width:767px){
+            width:100%;
+            padding-left: 0px;
+        }
+    }
+    &__design-para {
+        padding-right: 70px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.8;
+        @media (max-width:767px){
+            padding-right: 0px;
+        }
+    }
+    &__outterImg-left{
+        width: 100%;
+        margin-left: 0;
+        @media (min-width:992px){
+            width: calc(100% - -160px);
+            margin-left: -160px;
+        }
+    }
+    &__outterImg{
+        width: calc(100% - -343px);
+        @media (max-width:1100px){
+            max-width:100%
+        }
+
+    }
+    &__background{
+        position: relative;
+        &:after{ 
+            content: "";
+            background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+            position: absolute;
+            top: -50px;
+            bottom: -180px;
+            left: -100px;
+            right: 0;
+            width: 100vw;
+            z-index: 0;
+        }
+    }
+    &__right-wrapper>* {
+        position: relative;
+        z-index: 1;
+        @media (max-width:767px){
+            margin-top:30px;
+        }
+    }
+    &__image--grey{
+        filter: grayscale(100%);
+        opacity: 0.7;
+    }
+    &__timeline {
+        overflow: hidden;
+    }
+    &__slider{
+        overflow: hidden;
+        position: relative;        
+        &:after{
+            content: "";
+            position: absolute;
+            top: 150px;
+            bottom: -75px;
+            right: 0;
+            background: -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA));
+            background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+            width: 70%;
+            z-index: -1;
+        }
+    }
+    
+    &__slider-img {
+        // flex: 0 0 62%;
+        padding-right: 32px;
+    }
+    
+    &__slider-bg{
+        position: relative;        
+    }
+    &__auto-heading {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom:26px;
+    }
+    &__arrow{
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        padding-top: 10px;
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        display: inline-block;
+        background: transparent;
+        min-width: 40px;
+        height: 40px;
+    }
+    &__leader-link{
+        font-size: 18px;
+        color: #2255CE;
+        font-weight: 400;
+    }
+    &__leaders-wrap {
+        padding: 0;
+    }
+    
+    &__leader-about {
+        padding: 10px;
+    }
+    &__leader-post{
+        font-size: 24px;
+        line-height: 1.2;
+        color: #828282;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    &__leaders-heading {
+        margin-top: 0;
+    }
+    &__slider{
+        @media (max-width:767px){
+            overflow: hidden;
+        }
+    }
+    &__slider-wrapper {
+        position: relative;
+    }    
+    // &__slider-wrapper:after {
+    //     position: absolute;
+    //     content: "";
+    //     background: #fff;
+    //     border: 1px solid #D8D8D8;
+    //     width: 40px;
+    //     height: 38px;
+    //     bottom: 70px;
+    //     left: 30px;
+    // }
+    
+    // &__slider-wrapper:before {
+    //     position: absolute;
+    //     content: "";
+    //     background: #fff;
+    //     border: 1px solid #D8D8D8;
+    //     width: 40px;
+    //     height: 38px;
+    //     bottom: 70px;
+    //     left: 90px;
+    //     z-index: 1;
+    // }
+    &__slider-arrow {
+        position: absolute;
+        bottom: 120px;
+        left: 0;
+        right: 0;
+        width: 1110px;
+        margin: auto;
+        // @media (max-width: 767px){
+        //     bottom: -27px;
+        // }
+    } 
+    
+    &__arrow-right, 
+    &__arrow-left {
+        width: 50px;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        background: #fff;
+        padding: 11px;
+        text-align: center;
+        img{
+            width: 12px;
+        }
+    }
+    
+    &__arrow-left {
+        margin-right: 30px;
+    }
+    &__timeline-sec {
+        display: flex;
+        padding: 0 80px;
+        @media (max-width:992px) and (min-width:768px){
+            padding: 0 20px; 
+        }
+        @media (max-width:767px){
+            padding: 0 20px; 
+            flex-wrap: wrap;
+        }
+    }    
+    &__shape {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 8px 0 18px;
+    }
+    &__shape:before {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        content:"";
+        background: blue;
+        z-index: 1;
+    }
+    
+    &__shape:after {
+        content: "";
+        height: 2px;
+        background: #eee;
+        display: block;
+        left: -100px;
+        position: absolute;
+        right: -200px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 0;
+    }
+    
+    &__timeline-wrap {
+        padding-left: 20px;  
+        @media (min-width:768px){
+            width: 16%;
+        }
+        @media (max-width:767px){                  
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__timenline-date {
+        margin-left: -15px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    &__timeline-wrap:first-child {
+        .c-team__shape:after {
+            left:-100px;
+        }
+    }
+    
+    &__timenline-head {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        @media (max-width:992px) and (min-width:768px){
+            font-size: 15px; 
+        }
+    }
+    
+}

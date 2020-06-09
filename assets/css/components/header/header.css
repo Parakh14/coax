@@ -1,0 +1,54 @@
+/*Header CSS Start*/
+.c-header__wrapper .ui.grid + .grid {
+  margin-top: 0;
+}
+
+.c-header__wrapper {
+  padding: 1px 0px;
+}
+
+.c-header__wrapper .fluid {
+  padding: 0px 50px;
+}
+
+.c-header__wrapper .p-0{
+  padding:0;
+}
+
+
+@media (max-width: 1366px) {
+  .c-header__wrapper .fluid {
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .c-header__wrapper .fluid {
+    padding: 0px 15px;
+  }
+}
+
+.c-header__btnWrapper {
+  text-align: right;
+  padding: 5px 0px;
+}
+
+.c-header__logo {
+  padding: 12px 0px;
+  font-size: 0;
+}
+
+.c-header__logo a {
+  font-size: 0;
+}
+
+.c-header__wrapper .c-btn {
+  padding: 0px 20px;
+  min-width: 156px;
+  height: 48px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/*Header CSS Start*/
+/*# sourceMappingURL=header.css.map */

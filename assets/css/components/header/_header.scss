@@ -1,0 +1,120 @@
+/*Header CSS Start*/
+body{
+    padding-top: 80px;
+}
+.c-header{
+    &__wrapper .ui.grid+.grid{
+        margin-top: 0;
+    }
+    &__wrapper{
+        // padding: 1px 0px;
+            position: fixed;
+            top:0;
+            z-index: 999;
+            background: #ffff;
+            width: 100%;
+            padding-bottom: 15px;
+        @media (max-width:992px){
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 35px;
+        }
+        @media (max-width:991px){
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 30px;
+        }
+        @media (max-width:767px){            
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 5px;
+        }
+        .fluid{
+            padding: 0px 50px;
+            @media (max-width: 1366px){
+                padding: 0px 25px;
+            }
+            @media (max-width: 992px){
+                padding: 0px 15px;
+            }
+        }
+    }
+    &__btnWrapper{
+        text-align: right;
+        padding: 5px 0px;  
+    }
+    &__logo{
+        padding: 12px 0px;
+        font-size: 0;
+        @media (max-width:767px){
+            margin-left: -1rem;
+            margin-right: -1rem;
+            width:calc(100% + 2rem) !important;            
+        }
+        a{
+            font-size: 0;
+        }
+        svg{
+            display:inline-block;
+        }
+    }
+    &__menu-wrapper {
+        width: 1110px;
+        margin: auto;
+        @media (min-width:1600px) {
+            padding:0 1rem;
+        }
+        @media (max-width:1600px) {
+            width:960px;
+        }
+        @media (max-width:1400px) {
+            width:900px;
+        }
+        @media (max-width:1300px) {
+            width:800px;
+        }
+        @media (max-width:1180px) {
+            width: 650px;            
+            margin-left: 0;
+        }
+        @media (max-width:1080px) {
+            width: 600px;            
+            margin-left: 0;
+        }
+
+    }
+    &__contactarrow{
+        width: 16px;
+    }
+    &__main-wrapper {
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 20px 0 20px !important;
+    }
+    
+    &__logo-wrapper {
+        width: 170px;
+        padding-left: 10px;
+    }
+    
+    &__btnWrapper-wrapper {
+        width: 220px;
+        padding-right: 10px;
+    }
+}
+.c-header__wrapper .c-btn{
+    padding: 0px 20px;
+    min-width: 156px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.c-sticky{    
+    box-shadow: 0px 1px 1px 3px rgba(239, 239, 239, 0.31);
+}
+
+/*Header CSS Start*/

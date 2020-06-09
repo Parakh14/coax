@@ -1,0 +1,52 @@
+.c-technologies{
+    &__wrapper{        
+        @media (max-width:767px){
+            margin-bottom: 86px;
+        }
+        &--mbtech{
+            margin-top: 16px;
+            @media (max-width:767px){
+                margin-top: 100px;
+            }
+        }
+    }
+    &__innerWrapper{
+        margin-bottom: 30px;
+    }
+    &__headingBlock{
+        margin-bottom: 30px;
+        @media (max-width:767px){
+            margin-bottom: 0px;    
+            margin-top: 24px;
+        }
+    }
+    &__heading{
+        font-weight: normal;
+        font-size: 32px;
+        // text-transform: capitalize;
+        color: #000;
+        margin: 0;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        color: #000000;
+        font-weight: normal;
+        font-size: 18px;
+        // text-transform: capitalize;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            margin-right: 10px;
+            font-size: 0;
+            width: 22px;
+        }
+    }
+}
